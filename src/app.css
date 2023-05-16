@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    background-color: #23759C;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-image: url("background.png");
+    height: 60%;
+    width: 50%;
+    border-radius: 32px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+main {
+    height: 70%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.location-input {
+    width: 220px;
+    height: 35px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 8px;
+    border: none;
+}
+
+.location-input:focus {
+    outline: solid 1px;
+}
+
+.press-enter {
+    color: #cdcaca;
+    margin-top: 10px;
+    margin-left: 2px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+
+}
+
+.location {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+}
+
+.country {
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.loading {
+    color: white;
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.temp {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.last-update {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-label {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+@media(max-width: 1700px) {
+
+    .App {
+        background-image: url("background.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        height: auto;
+    }
+
+    .container {
+        background: none;
+        margin-bottom: 100px;
+        margin-top: 40px;
+    }
+
+    header {
+        margin-top: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .location {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .temp {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .press-enter {
+        margin-top: 30px;
+    }
+}
