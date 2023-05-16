@@ -2,8 +2,9 @@ import './app.css'
 import {useEffect, useRef, useState} from "react";
 import axios from "axios";
 
-function App() {
 
+function App() {
+    const [vh, setVh] = useState(window.innerHeight);
     const inputRef = useRef(null);
     const [data, setData] = useState(null)
     const [isFetching, setIsFetching] = useState(true)
@@ -29,6 +30,12 @@ function App() {
 
     useEffect(() => {
         getLocation()
+        const updateVh = () => {
+            setVh(window.innerHeight)
+        };
+        window.addEventListener('resize', updateVh)
+        return () => window.removeEventListener('resize', updateVh)
+
     }, []);
 
     useEffect(() => {
@@ -44,7 +51,7 @@ function App() {
     }
 
     return (
-        <div className="App">
+        <div className="App" style={{height: vh}}>
             <div className="container">
                 <header className={"header-input"}>
                     <div>

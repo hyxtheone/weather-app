@@ -8,7 +8,6 @@
 
 .App {
     background-color: #23759C;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,12 +114,10 @@
         display: flex;
         align-items: start;
         justify-content: center;
-        height: auto;
     }
 
     .container {
         background: none;
-        margin-bottom: 100px;
         margin-top: 40px;
     }
 
@@ -145,7 +142,7 @@
     }
 
     .temp {
-        font-size: 50px;
+        font-size: 46px;
         text-align: center;
     }
 
