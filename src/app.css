@@ -89,6 +89,7 @@
 .last-update {
     color: white;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 
 .weather {
@@ -102,6 +103,7 @@
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
+    text-align: center;
 }
 
 @media(max-width: 1700px) {
@@ -127,13 +129,14 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        gap: 20px;
+        gap: 10px;
     }
 
     .main-data {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+        margin-top: 40px;
     }
 
     .location {
@@ -144,9 +147,5 @@
     .temp {
         font-size: 46px;
         text-align: center;
-    }
-
-    .observations {
-        margin-top: 30px;
     }
 }
