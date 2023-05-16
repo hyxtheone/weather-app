@@ -21,14 +21,14 @@
     border-radius: 32px;
 }
 
-header {
+.header-input {
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-top: 40px;
 }
 
-main {
+.main-data {
     height: 70%;
     align-items: center;
     display: flex;
@@ -48,13 +48,12 @@ main {
     outline: solid 1px;
 }
 
-.press-enter {
+.observations {
     color: #cdcaca;
     margin-top: 10px;
     margin-left: 2px;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-
 }
 
 .location {
@@ -63,7 +62,7 @@ main {
     font-size: 36px;
 }
 
-.country {
+.region {
     color: white;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
@@ -125,7 +124,7 @@ main {
         margin-top: 40px;
     }
 
-    header {
+    .header-input {
         margin-top: 0;
         flex-direction: column;
         justify-content: center;
@@ -134,7 +133,7 @@ main {
         gap: 20px;
     }
 
-    main {
+    .main-data {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
@@ -150,7 +149,7 @@ main {
         text-align: center;
     }
 
-    .press-enter {
+    .observations {
         margin-top: 30px;
     }
 }

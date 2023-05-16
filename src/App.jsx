@@ -46,20 +46,20 @@ function App() {
     return (
         <div className="App">
             <div className="container">
-                <header>
+                <header className={"header-input"}>
                     <div>
                         <input className={"location-input"} placeholder={"Digite a localização."} onKeyPress={(e) => {handleKeyPress(e)}} ref={inputRef}/>
-                        <p className={"press-enter"}>Press Enter to Send.<br/>Tente a busca exterior em inglês!</p>
+                        <p className={"observations"}>Press Enter to Send.<br/>Tente a busca exterior em inglês!</p>
                     </div>
                     {isFetching ? <></> : (
                         <div>
                             <h1 className={"location"}>{data.location.name},</h1>
-                            <p className={"country"}>{data.location.region}, {data.location.country}.</p>
+                            <p className={"region"}>{data.location.region}, {data.location.country}.</p>
                         </div>
                     )}
                 </header>
                 {isFetching ? <p className={"loading"}>Loading...</p> : (
-                    <main>
+                    <main className={"main-data"}>
                         <div className={"temperature"}>
 
                             <p className={"temp"}>{data.current.temp_c}° C</p>
